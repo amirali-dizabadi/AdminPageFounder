@@ -1,4 +1,4 @@
-#github.com/amirali.dizabadi
+#github.com/amirali-dizabadi
 #need for run (next line)
 #pip install requests
 
