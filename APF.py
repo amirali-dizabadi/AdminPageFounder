@@ -1,3 +1,4 @@
+
 #github.com/amirali-dizabadi
 #need for run (next line)
 #pip install requests
@@ -5,8 +6,35 @@
 import requests
 import webbrowser
 
+from time import sleep
+
+print("                 *          in the name of god          *")
+print("                ***                                    ***")
+print("               *****                                  *****")
+print("              *******                                *******")
+print("             *********       coded by amirali       *********")
+print("              *******                                *******")
+print("               *****                                  *****")
+print("                ***                                    ***")
+print("                 *      amirali.dizabadi@gmail.com      *")
+
+print("please wait...")
+
+def progress(percent=0, width=40):
+    left = width *percent//100
+    right = width - left
+    print('\r[','#' * left,' ' * right,']',
+          f' {percent:.0f}%',
+          sep='', end='', flush=True)
+
+for i in range(101):
+    sleep(0.02)
+    progress(i)
 try :
-    target = input("enter url or website:\n")
+    target = input("\nenter url or website:\n")
+    
+    print("\n")
+
     if "http://" not in target:
         target = "http://" + target + "/"
 
@@ -29,4 +57,5 @@ try :
 except:
     print ("error please check url | website or internet")
     
+
 
